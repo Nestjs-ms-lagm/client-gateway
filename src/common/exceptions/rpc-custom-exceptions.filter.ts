@@ -10,7 +10,6 @@ export class RpcCustomExceptionFilter implements ExceptionFilter {
     const response = ctx.getResponse();
 
     const rpcError = exception.getError();
-    console.log({rpcError});
 
     if (
       typeof rpcError === 'object' && 
